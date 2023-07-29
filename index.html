@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volare</title>
+    <link rel="icon" href="./icons/favicon.svg" />
+    <link rel="stylesheet" href="./css/header.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <img src="./icons/logo.png" alt="Volare Logo" id="iconPageName" />
+      </a>
+    </header>
+    <main>
+      <section class="search">
+        <h1>FLIGHT SEARCHER</h1>
+
+        <form action="#" method="get" id="searchForm">
+          <img src="./icons/plane_takeoff.svg" alt="Takeoff Location Icon" />
+          <input type="text" placeholder="FROM" name="from" aria-label="From" />
+          <img src="./icons/plane_landing.svg" alt="Landing Location Icon" />
+          <input type="text" placeholder="TO" name="to" aria-label="To" />
+
+          <img src="./icons/calendar.svg" alt="Calendar Icon" />
+          <input
+            type="text"
+            name="outbound"
+            placeholder="DD-MM-YYYY"
+            class="dateInput"
+            aria-label="Departure Date"
+          />
+          <img src="./icons/calendar.svg" alt="Calendar Icon" />
+          <input
+            type="text"
+            name="return"
+            placeholder="COMING SOON"
+            class="dateInput"
+            disabled
+            aria-label="Return Date"
+          />
+
+          <img src="./icons/icon_passenger.svg" alt="Passenger Icon" />
+          <input
+            type="text"
+            placeholder="0"
+            name="passenger"
+            aria-label="Number of Passengers"
+          />
+          <button type="submit" id="searchButton">Search</button>
+          <p>
+            *Origin and destination airports should use the
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/IATA_airport_code"
+              >IATA
+            </a>
+            code.
+          </p>
+        </form>
+      </section>
+      <section class="loading hidden">
+        <div class="container">
+          <div class="fetching">
+            <div class="balls"></div>
+            <div class="balls"></div>
+            <div class="balls"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Section where we will display the response -->
+      <section class="response"></section>
+      <!-- Section with extra info -->
+      <section id="info">
+        <article>
+          <img src="./img/plane.jpg" alt="Airplane Image" />
+          <h3>Fly with Safety</h3>
+          <p>
+            From the moment you book your flight until you arrive at your
+            destination, we strive to provide you with a safe and worry-free
+            flying experience.
+          </p>
+        </article>
+        <article>
+          <img src="./img/passport.jpg" alt="Passport Image" />
+          <h3>Fly with Confidence</h3>
+          <p>
+            We have a wide selection of airlines recognized for their excellence
+            in safety. Our rigorous safety standards allow us to offer you
+            reliable and protected flight options.
+          </p>
+        </article>
+        <article>
+          <img src="./img/viajero.jpg" alt="Traveler Image" />
+          <h3>Fly with Us</h3>
+          <p>
+            Our commitment is to provide you with a reliable journey. With us,
+            you can fly with peace of mind, knowing that we work hard to ensure
+            that every aspect of your experience is carefully managed.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>David, Angela, Dumitru, Noelia - 2023 ©</p>
+    </footer>
+    <script type="module" src="./js/mainEn.js"></script>
+  </body>
+</html>
