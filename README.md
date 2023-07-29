@@ -1,4 +1,4 @@
-# Urgent Flight Finder
+# Urgent Flight Searcher
 
 This is a web application that allows you to search for the cheapest flight available for one person between two airports for the next day.
 
